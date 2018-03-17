@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88624D9F81DF22730F8E1248 /* Pods_AuthGoogle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2373B4CDA39772ABF90498ED /* Pods_AuthGoogle.framework */; };
 		D44AC0BC205D2FA2005CB243 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44AC0BB205D2FA2005CB243 /* AppDelegate.swift */; };
 		D44AC0BE205D2FA2005CB243 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44AC0BD205D2FA2005CB243 /* ViewController.swift */; };
 		D44AC0C1205D2FA2005CB243 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44AC0BF205D2FA2005CB243 /* Main.storyboard */; };
 		D44AC0C3205D2FA2005CB243 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D44AC0C2205D2FA2005CB243 /* Assets.xcassets */; };
 		D44AC0C6205D2FA2005CB243 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D44AC0C4205D2FA2005CB243 /* LaunchScreen.storyboard */; };
+		D44AC0CE205D32E8005CB243 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D44AC0CD205D32E8005CB243 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2373B4CDA39772ABF90498ED /* Pods_AuthGoogle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuthGoogle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A47221F18B65A40D2C9E7D46 /* Pods-AuthGoogle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthGoogle.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuthGoogle/Pods-AuthGoogle.release.xcconfig"; sourceTree = "<group>"; };
+		C4BBF606342F1E88119C572F /* Pods-AuthGoogle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuthGoogle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuthGoogle/Pods-AuthGoogle.debug.xcconfig"; sourceTree = "<group>"; };
 		D44AC0B8205D2FA2005CB243 /* AuthGoogle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthGoogle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44AC0BB205D2FA2005CB243 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D44AC0BD205D2FA2005CB243 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D44AC0C2205D2FA2005CB243 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D44AC0C5205D2FA2005CB243 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D44AC0C7205D2FA2005CB243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D44AC0CD205D32E8005CB243 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88624D9F81DF22730F8E1248 /* Pods_AuthGoogle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970E5EC9E753A0F22B53529A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2373B4CDA39772ABF90498ED /* Pods_AuthGoogle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA54A679F1546D15259CD2DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4BBF606342F1E88119C572F /* Pods-AuthGoogle.debug.xcconfig */,
+				A47221F18B65A40D2C9E7D46 /* Pods-AuthGoogle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D44AC0AF205D2FA2005CB243 = {
 			isa = PBXGroup;
 			children = (
 				D44AC0BA205D2FA2005CB243 /* AuthGoogle */,
 				D44AC0B9205D2FA2005CB243 /* Products */,
+				BA54A679F1546D15259CD2DD /* Pods */,
+				970E5EC9E753A0F22B53529A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 				D44AC0BD205D2FA2005CB243 /* ViewController.swift */,
 				D44AC0BF205D2FA2005CB243 /* Main.storyboard */,
 				D44AC0C2205D2FA2005CB243 /* Assets.xcassets */,
+				D44AC0CD205D32E8005CB243 /* GoogleService-Info.plist */,
 				D44AC0C4205D2FA2005CB243 /* LaunchScreen.storyboard */,
 				D44AC0C7205D2FA2005CB243 /* Info.plist */,
 			);
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D44AC0CA205D2FA2005CB243 /* Build configuration list for PBXNativeTarget "AuthGoogle" */;
 			buildPhases = (
+				0F2F9AAA33FBDDE4DA60F3D9 /* [CP] Check Pods Manifest.lock */,
 				D44AC0B4205D2FA2005CB243 /* Sources */,
 				D44AC0B5205D2FA2005CB243 /* Frameworks */,
 				D44AC0B6205D2FA2005CB243 /* Resources */,
+				EF848FB1BDB23F4AD48F59E8 /* [CP] Embed Pods Frameworks */,
+				683C97B4072B99C092B50D7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				D44AC0C6205D2FA2005CB243 /* LaunchScreen.storyboard in Resources */,
+				D44AC0CE205D32E8005CB243 /* GoogleService-Info.plist in Resources */,
 				D44AC0C3205D2FA2005CB243 /* Assets.xcassets in Resources */,
 				D44AC0C1205D2FA2005CB243 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F2F9AAA33FBDDE4DA60F3D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AuthGoogle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		683C97B4072B99C092B50D7F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthGoogle/Pods-AuthGoogle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF848FB1BDB23F4AD48F59E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AuthGoogle/Pods-AuthGoogle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AuthGoogle/Pods-AuthGoogle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D44AC0B4205D2FA2005CB243 /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		D44AC0CB205D2FA2005CB243 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4BBF606342F1E88119C572F /* Pods-AuthGoogle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		D44AC0CC205D2FA2005CB243 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47221F18B65A40D2C9E7D46 /* Pods-AuthGoogle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
